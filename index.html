@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="" class="form">
+            <div class="form-block">
+                <span class="form-title">Личная информация</span>
+                <label class='form-column'>
+                    <span class="form-span">Имя</span>
+                    <input id="name" class="form-input" type="text"  placeholder="Имя">
+                    <span class="form-error"></span>
+                </label>
+                <label class='form-column'>
+                    <span class="form-span">Email</span>
+                    <input id='email' class="form-input" type="email"  placeholder="Email">
+                    <span class="form-error"></span>
+                </label>
+                <label class='form-column'>
+                    <span class="form-span">Телефон</span>
+                    <input id='phone' class="form-input" type="tel"   placeholder="+7(___)___-__-__">
+                    <span class="form-error"></span>
+                </label>
+
+            </div>
+            <div class="form-block">
+
+                <div class="form-title">Информация о бизнесе</div>
+                <label class='form-column'>
+                    <span class="form-span">Ожидаемый оборот</span>
+                    <input class="form-input" id='num' type="number" step='0.01' placeholder="1 000 000 ">
+                    <span class="form-error"></span>
+                </label>
+                <div class="select-wrapper">
+                    <select >
+                        <option value="">Индустрия 1</option>
+                        <option value="">Индустрия 2</option>
+                        <option value="">Индустрия 3</option>
+                    </select>
+                </div>
+
+                <label class="form-row">
+                    <input class="form-hide " id='checkbox' type="checkbox" name="" id="">
+                    <span class="form-check"></span>
+                    <span class="form-span">Я принимаю правила сервиса</span>
+                </label>
+            </div>
+            <button class="form-btn" type="submit">Отправить</button>
+        </form>
+
+        <div class="success ">
+            <p>Спасибо! Ваша заявка принята</p>
+        </div>
+    </div>
+
+    <script src='https://unpkg.com/imask'></script>
+    <script src="script.js"> </script>
+</body>
+
+</html>
