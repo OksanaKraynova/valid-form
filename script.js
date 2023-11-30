@@ -80,16 +80,17 @@ const numValue = num.value.trim();
     if(!checkbox.checked ) {
         check = false
     } 
+    if(check === true){
+    
+        form.classList.add('hide')
+        success.classList.add('show')
+    }
   };
 
 form.addEventListener('submit', e => {
     e.preventDefault();
 
     validateInputs();
-if(check === true){
-    
-    form.classList.add('hide')
-    success.classList.add('show')
-}
+
     
 });
