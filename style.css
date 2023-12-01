@@ -71,6 +71,7 @@ body{
     min-width: 200px;
     margin-left: auto;
     cursor: pointer;
+    text-transform: uppercase;
 }
 .form-column{
     display: flex;
